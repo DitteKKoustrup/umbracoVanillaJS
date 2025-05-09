@@ -1,4 +1,9 @@
-export function renderContent(items) {
+export async function renderContent(items) {
+
+    const contentId = ""
+    const items = await fetchContent(contentId);
+
+
     const container = document.getElementById('content');
     container.innerHTML = '';
 

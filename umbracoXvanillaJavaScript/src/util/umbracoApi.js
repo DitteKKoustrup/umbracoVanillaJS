@@ -2,9 +2,9 @@ const apiUrl = import.meta.env.VITE_UMBRACO_API_URL;
 const apiKey = import.meta.env.VITE_UMBRACO_API_KEY;
 
 
-export async function fetchContent() {
+export async function fetchContent(contentId) {
     try {
-        const response = await fetch(`${apiUrl}/content`, {
+        const response = await fetch(`${apiUrl}/content/item/${contentId}`, {
             method: "GET",
             headers: {
                 'Api-Key': apiKey
