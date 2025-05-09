@@ -15,8 +15,9 @@ export async function fetchContent(contentId) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
+        console.log("log from api")
         const data = await response.json();
-        return data.items;
+        return data;
     } catch (error) {
         console.error("Error fetching content:", error);
         return [];
