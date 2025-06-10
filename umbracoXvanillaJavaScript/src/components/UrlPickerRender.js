@@ -12,7 +12,6 @@ export async function UrlPicker(contentId) {
     wrapper.innerHTML = `
     `;
 
-    // Handle the links
     const links = item.properties.urlpicker;
     if (Array.isArray(links) && links.length > 0) {
         const linkList = document.createElement('ul');
@@ -30,7 +29,6 @@ export async function UrlPicker(contentId) {
             linkList.appendChild(listItem);
         });
 
-        // Now append the list *after* setting innerHTML
         wrapper.appendChild(linkList);
     }
 
