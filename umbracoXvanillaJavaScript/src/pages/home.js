@@ -8,10 +8,11 @@ import { ContentPicker } from '../components/contentPickerRender.js';
 import { Numeric } from '../components/numericRender.js';
 import { UrlPicker } from '../components/UrlPickerRender.js';
 import { TinyMce } from '../components/tinyMceRender.js';
+import { TureFalse } from '../components/trueFalseRender.js';
 
 export async function Home() {
     const container = document.getElementById('content');
-    container.innerHTML = ''; // Only clear once here!
+    container.innerHTML = ''; 
 
     await MediaPicker("4c7bc8fc-5aa0-4cfa-a3d4-8cf77dc08d26");
     await BlockList("26cd548c-8118-4386-ae06-21ad5cc99a82");
@@ -23,5 +24,6 @@ export async function Home() {
     await Numeric("40fd6e78-d542-4113-8344-05046df31690");
     await UrlPicker("6e2b7854-4ce6-4002-8f46-3435c27c2cc6");
     await TinyMce("3bd1ac80-f490-471f-acf5-535af9333906");
+    await TureFalse("2eca1528-ec9b-4a81-85dd-0fa2518523c5");
 
 }
