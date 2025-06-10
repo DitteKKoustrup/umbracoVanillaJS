@@ -6,6 +6,8 @@ import { DateTime } from '../components/dateTimeRender.js'
 import { DropDown } from '../components/dropDownRender.js';
 import { ContentPicker } from '../components/contentPickerRender.js';
 import { Numeric } from '../components/numericRender.js';
+import { UrlPicker } from '../components/UrlPickerRender.js';
+import { TinyMce } from '../components/tinyMceRender.js';
 
 export async function Home() {
     const container = document.getElementById('content');
@@ -19,5 +21,7 @@ export async function Home() {
     await DropDown("dde9748e-83b9-4059-89ed-0a2798296cc6");
     await ContentPicker("0e3be28c-c1c0-46c4-96a3-5e7f6ca814ee");
     await Numeric("40fd6e78-d542-4113-8344-05046df31690");
+    await UrlPicker("6e2b7854-4ce6-4002-8f46-3435c27c2cc6");
+    await TinyMce("3bd1ac80-f490-471f-acf5-535af9333906");
 
 }
