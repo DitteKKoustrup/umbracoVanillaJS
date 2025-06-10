@@ -50,7 +50,7 @@ export async function ContentPicker(contentId) {
 
             case 'textarea': {
                 const text = picked.properties.text || '<p>No text available</p>';
-                contentPickerMarkup = `<div>${text}</div>`;
+                contentPickerMarkup = `<div class="text-area">${text}</div>`;
                 break;
             }
 
