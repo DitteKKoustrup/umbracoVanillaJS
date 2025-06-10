@@ -10,15 +10,11 @@ export async function DropDown(contentId) {
     const wrapper = document.createElement('div');
     wrapper.classList.add('content-block');
 
-    const title = item.properties.header || 'No title';
-    const descriptionMarkup = item.properties.description || '';
     const text = item.properties.text || '';
 
     const dropDown = item.properties.dropDown || '';
 
     wrapper.innerHTML = `
-        <h2>${title}</h2>
-        ${descriptionMarkup}
         ${text}
         ${dropDown}
     `;

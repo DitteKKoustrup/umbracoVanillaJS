@@ -9,13 +9,7 @@ export async function UrlPicker(contentId) {
     const wrapper = document.createElement('div');
     wrapper.classList.add('content-block');
 
-    const title = item.properties.header || 'No title';
-    const descriptionMarkup = item.properties.description || '';
-
-    // Add title and description safely
     wrapper.innerHTML = `
-        <h2>${title}</h2>
-        <p>${descriptionMarkup}</p>
     `;
 
     // Handle the links

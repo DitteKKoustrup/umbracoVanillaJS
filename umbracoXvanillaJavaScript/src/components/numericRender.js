@@ -10,13 +10,9 @@ export async function Numeric(contentId) {
         const wrapper = document.createElement('div');
         wrapper.classList.add('content-block');
 
-        const title = item.properties.header || 'No title';
-        const descriptionMarkup = item.properties.description || '';
         const number = item.properties.numeric || '';
 
         wrapper.innerHTML = `
-            <h2>${title}</h2>
-            ${descriptionMarkup}
             ${number}
         `;
 
